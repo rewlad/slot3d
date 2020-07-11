@@ -1,0 +1,7 @@
+services:
+  main:
+    command: ["sleep","infinity"]
+    image: node:14.3.0
+    volumes:
+    - .:/app
+version: '2'

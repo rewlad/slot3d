@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+body {
+    font-family: Arial,sans-serif;
+    background-color: skyblue;
+}
+
+.ReelControl {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    background-color: white;
+}
+.ReelControl > div {
+    border: 1px solid silver;
+}
+.Button {
+    display: inline-block;
+    width: 110px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+.ReelPic {
+    height: 60px;
+    background-size: 70px 60px;
+}
+
+.Chosen { 
+    background-color: yellow; 
+}
+
+.PayTable {
+    margin: 10px;
+    border-collapse: collapse;
+    background-color: white;
+}
+.PayTable td, .PayTable th {
+    border: 1px solid silver;
+    padding: 2px 5px;
+}
+.PayTable .Payout {
+    text-align: right;
+}
+.PayTable .Chosen {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.Panel {
+    vertical-align: top;
+    display: inline-block;
+}
+.Balance {
+    display: inline-block;
+    padding: 10px;
+}
+
+.Balance > input {
+    text-align: right;
+}
+</style>
+<script>const process = {env:{}}</script>
+<body><script src="out/main.js"></script></body>
